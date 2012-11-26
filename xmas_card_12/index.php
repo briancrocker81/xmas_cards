@@ -6,7 +6,19 @@
     <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-    <link rel="icon" type="image/png" href="http://southdevon.ac.uk/templates/sdcdefault/favicon.ico" />    
+    <link rel="icon" type="image/png" href="http://southdevon.ac.uk/templates/sdcdefault/favicon.ico" />
+    <meta name="Description" content="Welcome to South Devon College's Christmas Card for 2012">
+    
+<!-- Snow -->
+<script type="text/javascript" src="../xmas_card_11/js/snowstorm.js"></script>
+<script type="text/javascript">
+snowStorm.snowColor = '#FFF';
+snowStorm.flakesMaxActive = 84;  // show more snow on screen at once default was 84, (I think)
+snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+snowStorm.flakeWidth = 20;            // max pixel width for snow element
+snowStorm.flakeHeight = 20; 
+</script>
+<!-- //END Snow -->
 </head>
 <body>
     <div id="wrapper">
@@ -56,17 +68,17 @@ function get_user_browser()
     <?php
       $browser = get_user_browser();
       if($browser == "ie"){ ?>
-        <object height="81" width="100%"> 
-          <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952"></param> 
+        <object height="81" width="40%" style="float: right;padding-bottom: 10px;" > 
+          <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952&show_comments=false"></param> 
           <param name="allowscriptaccess" value="always"></param> 
-          <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952" type="application/x-shockwave-flash" width="100%"></embed> 
+          <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952&amp;auto_play=true&amp;show_comments=false" type="application/x-shockwave-flash" width="100%"></embed> 
         </object>
     <?php } else { ?>
   
             <div id="htmlcaption" class="nivo-html-caption">
                 <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
             </div>
-              <iframe style="float: right;padding-bottom: 10px;" width="40%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952&amp;auto_play=false&amp;show_artwork=true&amp;color=4f2170"></iframe>  
+              <iframe style="float: right;padding-bottom: 10px;" width="40%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952&amp;auto_play=true&amp;show_artwork=true&amp;color=4f2170&amp;show_comments=false"></iframe>  
           <?php } ?>
               
        
