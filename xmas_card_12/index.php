@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
     <link rel="icon" type="image/png" href="http://southdevon.ac.uk/templates/sdcdefault/favicon.ico" />
     <meta name="Description" content="Welcome to South Devon College's Christmas Card for 2012">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" >
     
 <!-- Snow -->
 <script type="text/javascript" src="../xmas_card_11/js/snowstorm.js"></script>
