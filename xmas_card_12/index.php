@@ -20,10 +20,56 @@
                 <img src="images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
                 <img src="images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" /-->
             </div>
+    <?php
+function get_user_browser()
+{
+    $u_agent = $_SERVER['HTTP_USER_AGENT'];
+    $ub = '';
+    if(preg_match('/MSIE/i',$u_agent))
+    {
+        $ub = "ie";
+    }
+    elseif(preg_match('/Firefox/i',$u_agent))
+    {
+        $ub = "firefox";
+    }
+    elseif(preg_match('/Safari/i',$u_agent))
+    {
+        $ub = "safari";
+    }
+    elseif(preg_match('/Chrome/i',$u_agent))
+    {
+        $ub = "chrome";
+    }
+    elseif(preg_match('/Flock/i',$u_agent))
+    {
+        $ub = "flock";
+    }
+    elseif(preg_match('/Opera/i',$u_agent))
+    {
+        $ub = "opera";
+    }
+
+    return $ub;
+}
+?>
+    <?php
+      $browser = get_user_browser();
+      if($browser == "ie"){ ?>
+        <object height="81" width="100%"> 
+          <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952"></param> 
+          <param name="allowscriptaccess" value="always"></param> 
+          <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952" type="application/x-shockwave-flash" width="100%"></embed> 
+        </object>
+    <?php } else { ?>
+  
             <div id="htmlcaption" class="nivo-html-caption">
                 <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
             </div>
-<iframe style="float: right" width="40%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952&amp;auto_play=true&amp;show_artwork=true&amp;color=4f2170"></iframe>  
+              <iframe style="float: right;padding-bottom: 10px;" width="40%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F22362952&amp;auto_play=false&amp;show_artwork=true&amp;color=4f2170"></iframe>  
+          <?php } ?>
+              
+       
         </div>
 
     </div>
