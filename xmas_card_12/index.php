@@ -85,9 +85,11 @@ function get_user_browser()
     $(window).load(function() {
         $('#slider').nivoSlider({
           effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
-          animSpeed: 300, // Slide transition speed
-          pauseTime: 1000, // How long each slide will show
+          animSpeed: 400, // Slide transition speed
+          pauseTime: 900, // How long each slide will show
+          controlNav: false,
           directionNav: false, // Next & Prev navigation
+          pauseOnHover: false
           });
     });
     </script>  
