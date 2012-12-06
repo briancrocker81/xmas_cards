@@ -69,15 +69,14 @@ function get_user_browser()
     <?php
       $browser = get_user_browser();
       if($browser == "ie"){ ?>
-        <object height="81" width="40%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19045044&amp;show_comments=false&amp;auto_play=true&amp;color=4f2170"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19045044&amp;show_comments=false&amp;auto_play=true&amp;color=4f2170" type="application/x-shockwave-flash" width="100%"></embed> </object>
+        <object height="81" width="40%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F70191463?&amp;show_comments=false&amp;auto_play=true&amp;color=4f2170"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F70191463?&amp;show_comments=false&amp;auto_play=true&amp;color=4f2170" type="application/x-shockwave-flash" width="40%"></embed> </object>
     <?php } else { ?>
   
-              <iframe style="float:right" width="40%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F19045044&amp;show_comments=false&amp;auto_play=true&amp;show_artwork=true&amp;color=4f2170"></iframe> 
+        <iframe style="float:left; margin-top: 15px;" width="40%" height="166" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F70191463?&amp;show_comments=false&amp;auto_play=true&amp;show_artwork=true&amp;color=4f2170"></iframe> 
           <?php } ?>
               
        
         </div>
-
     </div>
     <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="jquery.nivo.slider.js"></script>
