@@ -1,0 +1,163 @@
+body {
+  background-color: #4f2170;
+  margin: 25px;
+  color: #fff;
+  font-family: arial,helvetica,sans-serif;
+  background-repeat:repeat-x;
+}
+
+h1 {
+  color: #fff;  
+  font-size: 43px;
+  line-height: 43px;
+}
+
+i {
+  color: #fff;  
+  font-size: 18px;  
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+p.donkey-poo {
+  
+}
+
+#notice {
+  width: 958px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#wrapper {
+  text-align: center;
+  margin: 0 auto;
+  background-repeat:no-repeat;
+  max-width: 1000px;
+}
+
+.container {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+#ofsted.span2 a, #ofsted.span2 img {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  float: right;
+  text-align: right;
+}
+
+.container a.ofsted-logo img {
+    border: 1px solid #FFFFFF;
+
+}
+
+.ofsted-logo {
+  padding-right: 7px;
+}
+
+.box {
+  -moz-border-radius: 3px;
+  border-radius: 8px;
+  border: 1px dashed rgba(255,255,255, 0.8);
+  margin: 0;
+}
+
+.img-icon {
+  float: left;
+  width: 100%;
+}
+
+.fish-swill {
+  float: right;
+  background-color: rgba(255,255,255, 0.75);
+  color: #4f2170;
+  padding: 3px;
+  font-weight: bold;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.box p {
+  font-size: 1.3em;
+  color: #f6f6f6;
+  margin: 21px;
+  text-shadow: 2px 2px 2px #000;  
+}
+
+.box img {
+  height: 100px;
+  margin: 10px 3px 0 3px;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.social p.web-address {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.pintrest {
+    background: none repeat scroll 0 0 #CB2027;
+}
+
+/* PrettyPhoto */
+div.pp_default .pp_description {
+  color: #4f2170;
+}
+
+.pp_gallery ul a img {
+  max-height: 100%;
+  width: auto;
+}
+
+div.pp_default .pp_social {
+  display: none;
+  float: none;
+  height: 0;
+  margin-top: 0;
+  visibility: hidden;
+}
+
+/*-----------------------------------------------------
+-------------        MEDIA QUERIES         ------------
+-----------------------------------------------------*/
+
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+  #ofsted.span2 img {
+    width: 100%;
+  }
+}
+
+/* Phone */
+@media (max-width: 767px) { 
+  .box {
+    margin-bottom: 10px;
+  }
+  
+  .img-icon {
+    float: none;
+    width: auto;
+  }
+  
+  html.js body div#wrapper div.row-fluid div.offset4 div.row-fluid a.span2 {
+    float: left;
+    width: 20%;
+  }
+
+}
