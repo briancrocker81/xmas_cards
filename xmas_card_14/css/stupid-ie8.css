@@ -1,0 +1,16 @@
+.box {
+  border: 1px solid #fff;
+}
+
+
+.box.notyet {
+  border: 1px dashed #fff;  
+}
+
+.container a.ofsted-logo img {
+    border: none;
+  }
+
+.fish-swill {
+  background-color: #fff;
+}
