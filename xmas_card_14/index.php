@@ -19,8 +19,7 @@ $title = array(
   'Devon Studio School opens for business!',
   'Rameez Shah wins the National World Skills Championships!', 
   'Joining in the festive fun with local primary school projects', 
-  'All aboard the Pilgrim in Brixham, students help to restore', 
-  'Colour, movement and dance at the grand opening to our Hair Show', 
+  'All aboard the Pilgrim in Brixham, students help to restore',
   'End of Term - Merry Christmas everyone!'
   );
 ?>
@@ -36,7 +35,7 @@ $title = array(
 <meta property="og:site_name"   content="South Devon College Xmas Card">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merry Christmas 2013 from South Devon College</title>
+<title>Merry Christmas 2014 from South Devon College</title>
 <link rel="stylesheet" href="http://reset5.googlecode.com/hg/reset.min.css" type="text/css" />
 
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
@@ -44,12 +43,12 @@ $title = array(
 <link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.css" />
 
 <link rel="stylesheet" href="css/style.css" type="text/css" />
+
 <link rel="shortcut icon" href="media/favicon.ico" />
 
 <!-- Google font --> 
-<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Mate' rel='stylesheet' type='text/css'> <!-- Used for the countdown page -->
-<!-- //END Google font -->
+<link href="http://fonts.googleapis.com/css?family=Paprika&amp;text=Inspiring our community through learning for all" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic|Patua+One" rel="stylesheet" type="text/css">
 
 <!-- Nivo JS code -->
 <link rel="stylesheet" href="css/nivo-lightbox.css" type="text/css" />
@@ -62,24 +61,14 @@ $title = array(
     });
   });
 </script>
-<!-- //END PrettyPhoto JS code -->
 
 <!-- Snow -->
 <script type="text/javascript" src="js/snowstorm.js"></script>
 <script type="text/javascript">
-  snowStorm.snowColor = '#FFF';
-  snowStorm.flakesMax = 128;  
-  snowStorm.flakesMaxActive = 84;  // show more snow on screen at once default was 84, (I think)
   snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
-  snowStorm.flakeWidth = 20;            // max pixel width for snow element
-  snowStorm.flakeHeight = 20; 
-  snowStorm.animationInterval = 200000;   
-  snowStorm.freezeOnBlur = true;  
 </script>
 <!-- //END Snow -->
 
-
-<!-- //END Google Analytics code -->
 
 <!--[if lt IE 9]>
   <link type="text/css" rel="stylesheet" href="css/stupid-ie8.css" />
@@ -109,18 +98,18 @@ $title = array(
       <div class="container">
         <div class="row-fluid">
           <div class="span2" id="logo">
-            <a href="http://www.southdevon.ac.uk">
-              <img src="http://southdevon.ac.uk/images/template-images/shared_images/colour-logo.png" title="Visit the South Devon College main website" />
+            <a href="http://southdevon.ac.uk" target="_blank">
+              <img src="http://southdevon.ac.uk/images/template-images/shared_images/colour-logo.png" title="Visit the South Devon College website" />
             </a>
           </div>
           <div class="span8">
-            <h1>Merry Christmas from South Devon College</h1>
-            <i>Inspiring our community through learning for all</i>
+            <h1>Merry Christmas from <br>South Devon College</h1>
+            <i class="g-font">Inspiring our community through learning for all</i>
             <h4>Turn on your sound and click below for our very own Christmas song!</h4>
           </div>
           <div class="span2 hidden-phone" id="ofsted">
-            <a class="ofsted-logo" href="http://www.southdevon.ac.uk/about-us/awards-and-successes">
-              <img src="http://southdevon.ac.uk/images/template-images/sdc-home/ofsted.png" title="Visit the South Devon College main website" />
+            <a class="ofsted-logo" href="http://southdevon.ac.uk/about-us/awards-and-successes" target="_blank">
+              <img src="http://southdevon.ac.uk/images/template-images/sdc-home/ofsted.png" title="Learn more about South Devon College's awards and successes" />
             </a>
           </div>
         </div>
@@ -132,7 +121,7 @@ $title = array(
   if ($d=="Nov") {
 
     echo '<div class="row-fluid container ferret">';
-    for ($j=1; $j<=20; $j++) {    
+    for ($j=1; $j<=19; $j++) {    
       if (($j-1)%6==0) {
         echo '</div><div class="row-fluid container">';
       }
@@ -143,7 +132,7 @@ $title = array(
                   <span class="img-icon">
                     <img src="media/thumbnails/'.$j.'.png" />
                   </span>
-                  <span class="fish-swill">' . addOrdinalNumberSuffix($j) .
+                  <span class="date-notifier">' . addOrdinalNumberSuffix($j) .
                   '</span>
                   
                 </a>
@@ -158,7 +147,7 @@ $title = array(
               '."\n";
       }
     }; ?>
- <div class="span4">
+ <div class="offset2 span4">
      <?php
       function get_user_browser()
       {
@@ -188,19 +177,19 @@ $title = array(
         <p>Share our card on:</p>
       </div>
       <div class="row-fluid">        
-        <a class="offset1 span2" href="https://twitter.com/intent/tweet?text=South Devon College's Advent Calendar 2013&amp;url='http://southdevon.ac.uk/xmas-card'&amp;hashtags=southdevoncollege" target="_blank">
+        <a class="offset1 span2" href="https://twitter.com/intent/tweet?text=South Devon College's Advent Calendar 2014&amp;url='http://southdevon.ac.uk/xmas-card'&amp;hashtags=southdevoncollege" target="_blank">
           <img title="Share this to Twitter" alt="Twitter icon" src="//southdevon.ac.uk/images/template-images/shared_images/social/twitter.png"></a>
-        <a class="span2" href="https://www.facebook.com/sharer/sharer.php?...+South Devon College's Advent Calendar 2013" target="_blank">
+        <a class="span2" href="https://www.facebook.com/sharer/sharer.php?...+South Devon College's Advent Calendar 2014" target="_blank">
           <img title="Share this to Facebook" alt="Facebook icon" src="//southdevon.ac.uk/images/template-images/shared_images/social/facebook.png"></a>
         <a class="span2" href="https://plus.google.com/share?url=southdevon.ac.uk/xmas-card" target="_blank">
           <img title="Share this to Google+" alt="Google+ icon" src="//southdevon.ac.uk/images/template-images/shared_images/social/googleplus.png"></a>            
-        <a class="span2" href="http://www.tumblr.com/share?v=3&amp;t=South Devon College's Advent Calendar 2013&amp;u=southdevon.ac.uk/xmas-card" target="_blank">
+        <a class="span2" href="http://www.tumblr.com/share?v=3&amp;t=South Devon College's Advent Calendar 2014&amp;u=southdevon.ac.uk/xmas-card" target="_blank">
           <img title="Share this to tumblr" alt="tumblr icon" src="//southdevon.ac.uk/images/template-images/shared_images/social/tumblr.png"></a>
         <!--
         <a class="span2 pintrest" href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red" target="_blank">
           <img title="Share this to pinterest" alt="pinterest icon" src="//southdevon.ac.uk/images/template-images/shared_images/social/pinterest.png"></a>
         -->
-        <a class="span2" href="mailto:?subject=South Devon College's Advent Calendar 2013&amp;body=Check out South Devon College's new Christmas Card for 2013: http%3A%2F%2Fsouthdevon.ac.uk%2Fxmas-card">
+        <a class="span2" href="mailto:?subject=South Devon College's Advent Calendar 2014&amp;body=Check out South Devon College's new Christmas Card for 2014: http%3A%2F%2Fsouthdevon.ac.uk%2Fxmas-card">
           <img title="Share this via email" alt="email icon" src="http://iwanttobe.southdevon.ac.uk/img/social/email.png"></a>
         <span class="span1"></span>
       </div>
@@ -226,5 +215,5 @@ $title = array(
 </body>
 
 <script src="js/hidden.js"></script>
-
+<!-- Background provided by http://www.dvd-ppt-slideshow.com/blog/free-christmas-powerpoint-backgrounds-blue-christmas -->
 </html>
