@@ -1,5 +1,4 @@
 html { 
-
   background: url(../images/snowman.png) no-repeat center center fixed; 
   background-color: #4f2170;
   -webkit-background-size: cover;
@@ -12,7 +11,7 @@ html {
 
 body {
   background-color: transparent;
-  margin: 25px;
+  margin: 15px;
   color: #fff;
   font-family: arial,helvetica,sans-serif;
   background-repeat:repeat-x;
@@ -20,10 +19,11 @@ body {
 
 h1 {
   color: #fff;  
-  font-size: 43px;
-  line-height: 43px;
+  font-size: 41px;
+  line-height: 41px;
   font-family: 'Patua One', Arial;
   font-weight: normal;  
+  margin-top: 0;
 }
 
 h3 {
@@ -43,14 +43,16 @@ p {
   margin: 0 0 10px;
 }
 
-.eggy {
+.eggy, .ferret {
   visibility: hidden;
   display:none;
+  margin: 0;
 }
 
 .show {
   visibility: visible!important;
   display: block;
+  margin: 0 0 10px;
 }
 
 #notice {

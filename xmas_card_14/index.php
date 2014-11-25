@@ -2,25 +2,25 @@
 <html>
 <?php 
 $title = array(
-  'Poirot makes an appearance, working with the Gorilla project', 
-  'Fun for all with our successful Community Day!',   
-  'Greg Fitzgerald strikes Gold with the AoC, with Luke Waldron', 
-  'TV presenter Nick Baker joins us for the day',
-  'Doing something Funny for Money!', 
-  'Iain Stewart joins us for Topping Out ceremony at SWEC', 
-  'Students travel 5000 miles to Beijing!', 
-  'Students travel 4500 miles in the other direction to Oklahoma!', 
-  'Harlem Shake fever hits South Devon College', 
-  'Sea King helicopter drops in to say hello!', 
-  'Two prestigious Beacon Awards for the College!', 
-  'Children in Need face painting fun!', 
-  'Construction students raise money making wooden planters', 
-  'Successful ‘Have a Go’ days with Galliford Try and local primary schools', 
-  'Devon Studio School opens for business!',
-  'Rameez Shah wins the National World Skills Championships!', 
-  'Joining in the festive fun with local primary school projects', 
-  'All aboard the Pilgrim in Brixham, students help to restore',
-  'End of Term - Merry Christmas everyone!'
+  'Adventure Sports students reaching dizzy heights in the Cairngorms', 
+  'South Devon College retain IIP Gold status',   
+  'Students strut their stuff at the annual Hair and Fashion Show!', 
+  'Public Services mascot, Hugh Munro, explores Majorca',
+  'Olympic rower, James Cracknell, joins our Noss Marine Academy Activity Day', 
+  'We are now a dedicated rehoming centre for cats and kittens with the Blue Cross', 
+  '&#34;The greatest thing you\'ll ever learn is just to love and be loved in return&#34; Moulin Rouge, 2001', 
+  'A beautiful new playhouse for Brixham Family Group thanks to South Devon College students', 
+  'Students celebrate a successful 99.5% A Level pass rate', 
+  'A hard day\'s work celebrated with the cast of Let It Be in the University Centre', 
+  'Students turn into insects at Paignton Zoo', 
+  'South Devon High School officially opens its doors to the first cohort', 
+  'Students give us a thrilling flash mob for Halloween', 
+  'His Royal Highness the Duke of Gloucester officially opens the South West Energy Centre and Passivhaus', 
+  'The South Devon College Football Academy wear their rainbow laces with pride',
+  'Our apprentices enjoy their Awards and Graduation Ceremony at the Imperial Hotel, Torquay', 
+  'Woody greets lots of new faces to the September Open Evening', 
+  'The Automotive team gain pole position at the IMI Awards',
+  'Our degree students graduate in style at Torre Abbey Gardens'
   );
 ?>
 <head>
@@ -92,6 +92,17 @@ $title = array(
  
 ?>
 <?php include ("../templates/sdcdefault/partials/google_analytics.php"); ?>
+<?php
+ 
+  define('USER', 'Card');
+  define('PASSWORD', 'Christmas');
+  if ((isset($_SERVER['PHP_AUTH_USER']) && $_SERVER['PHP_AUTH_USER'] == USER && isset($_SERVER['PHP_AUTH_PW']) && $_SERVER['PHP_AUTH_PW'] == PASSWORD)) {
+    #echo "Logged in";
+  } else {
+   header( 'Location: login.php' ) ; 
+  }
+  
+?>
 </head>
 <body>
     <div id="wrapper">
@@ -128,7 +139,7 @@ $title = array(
       
       if ((int)date('j', time())>=$j) {
         echo '<div id="dec'.$j.'" class="span2 box available">
-                <a class="nivo" href="media/large_images/'.$j.'.jpg" data-lightbox-gallery="xmas-card" title="'. $title[$j-1] .'">
+                <a class="nivo" href="http://southdevon.ac.uk/images/christmas-card/seasons-greetings-'.$j.'.jpg" data-lightbox-gallery="xmas-card" title="'. $title[$j-1] .'">
                   <span class="img-icon">
                     <img src="media/thumbnails/'.$j.'.png" />
                   </span>
