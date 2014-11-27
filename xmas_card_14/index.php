@@ -2,23 +2,23 @@
 <html>
 <?php 
 $title = array(
-  'Adventure Sports students reaching dizzy heights in the Cairngorms', 
-  'South Devon College retain IIP Gold status',   
+  'Students celebrate a successful 99.5% A Level pass rate', 
+  'South Devon High School officially opens its doors to the first cohort',   
   'Students strut their stuff at the annual Hair and Fashion Show!', 
   'Public Services mascot, Hugh Munro, explores Majorca',
   'Olympic rower, James Cracknell, joins our Noss Marine Academy Activity Day', 
   'We are now a dedicated rehoming centre for cats and kittens with the Blue Cross', 
   '&#34;The greatest thing you\'ll ever learn is just to love and be loved in return&#34; Moulin Rouge, 2001', 
   'A beautiful new playhouse for Brixham Family Group thanks to South Devon College students', 
-  'Students celebrate a successful 99.5% A Level pass rate', 
+  'Adventure Sports students reaching dizzy heights in the Cairngorms', 
   'A hard day\'s work celebrated with the cast of Let It Be in the University Centre', 
   'Students turn into insects at Paignton Zoo', 
-  'South Devon High School officially opens its doors to the first cohort', 
+  'South Devon College retain IIP Gold status',   
   'Students give us a thrilling flash mob for Halloween', 
   'His Royal Highness the Duke of Gloucester officially opens the South West Energy Centre and Passivhaus', 
   'The South Devon College Football Academy wear their rainbow laces with pride',
-  'Our apprentices enjoy their Awards and Graduation Ceremony at the Imperial Hotel, Torquay', 
-  'Woody greets lots of new faces to the September Open Evening', 
+  'The Mitch Tonks Seafood Academy provides the recipe for success for budding young chefs', 
+  'Travel and Tourism students enjoy a fun packed day at the World Travel Market, in London', 
   'The Automotive team gain pole position at the IMI Awards',
   'Our degree students graduate in style at Torre Abbey Gardens'
   );
@@ -36,6 +36,7 @@ $title = array(
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Merry Christmas 2014 from South Devon College</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <link rel="stylesheet" href="http://reset5.googlecode.com/hg/reset.min.css" type="text/css" />
 
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
@@ -93,7 +94,7 @@ $title = array(
 ?>
 <?php include ("../templates/sdcdefault/partials/google_analytics.php"); ?>
 <?php
- 
+ /*
   define('USER', 'Card');
   define('PASSWORD', 'Christmas');
   if ((isset($_SERVER['PHP_AUTH_USER']) && $_SERVER['PHP_AUTH_USER'] == USER && isset($_SERVER['PHP_AUTH_PW']) && $_SERVER['PHP_AUTH_PW'] == PASSWORD)) {
@@ -101,7 +102,7 @@ $title = array(
   } else {
    header( 'Location: login.php' ) ; 
   }
-  
+  */
 ?>
 </head>
 <body>
@@ -164,7 +165,7 @@ $title = array(
       {
           $u_agent = $_SERVER['HTTP_USER_AGENT'];
           $ub = '';
-          if(preg_match('/(?i)msie [1-8]/',$_SERVER['HTTP_USER_AGENT']))
+          if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT']))
           {
               $ub = "ie";
           }
@@ -172,11 +173,24 @@ $title = array(
       }
 
       $browser = get_user_browser();
-      if($browser == "ie"){ ?>        
-        <object width="312" height="135"><param name="movie" value="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fkevtufc%2Fsouth-devon-college-does-band-aids-do-they-know-christmas%2F&mini=&stylecolor=&hide_artwork=&embed_type=widget_standard&embed_uuid=40befef7-ff2d-4d83-8008-342e05a0a0c9&hide_tracklist=&hide_cover=1&autoplay="></param><param name="allowFullScreen" value="true"></param><param name="wmode" value="opaque"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fkevtufc%2Fsouth-devon-college-does-band-aids-do-they-know-christmas%2F&mini=&stylecolor=&hide_artwork=&embed_type=widget_standard&embed_uuid=40befef7-ff2d-4d83-8008-342e05a0a0c9&hide_tracklist=&hide_cover=1&autoplay=" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="312" height="135"></embed></object>
-        <!--<iframe width="100%" height="135" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122421849?&amp;show_comments=false&amp;auto_play=false&amp;show_artwork=true&amp;color=4f2170"></iframe>-->
-        <!--<object height="150px" width="100%"> <param name="movie" value="https://player.soundcloud.com/player.swf?url=https%3A//api.soundcloud.com/tracks/122421849?&amp;show_comments=false&amp;auto_play=false&amp;color=4f2170"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="81" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F70191463?&amp;show_comments=false&amp;auto_play=true&amp;color=4f2170" type="application/x-shockwave-flash" width="100%"></embed> </object>-->
+      #echo '<h1>' . $browser . '</h1>';
+      if($browser == "ie"){ 
+        $range_start = ip2long("172.0.0.0");
+        $range_end   = ip2long("172.255.255.255");
+        $ip          = ip2long($_SERVER['REMOTE_ADDR']);
+        if ($ip >= $range_start && $ip <= $range_end) {
+        ?>
+          <iframe height="135" width="312" src="http://estream.southdevon.ac.uk/Embed.aspx?id=1989&amp;wmode=transparent&amp;code=9U~rxdKn0uspoaygIPEemx0" frameborder="0"></iframe>
+        <?php
+        } else {
+        ?>
+          <object width="312" height="135"><param name="movie" value="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fkevtufc%2Fsouth-devon-college-does-band-aids-do-they-know-christmas%2F&mini=&stylecolor=&hide_artwork=&embed_type=widget_standard&embed_uuid=40befef7-ff2d-4d83-8008-342e05a0a0c9&hide_tracklist=&hide_cover=1&autoplay="></param><param name="allowFullScreen" value="true"></param><param name="wmode" value="opaque"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.mixcloud.com/media/swf/player/mixcloudLoader.swf?feed=http%3A%2F%2Fwww.mixcloud.com%2Fkevtufc%2Fsouth-devon-college-does-band-aids-do-they-know-christmas%2F&mini=&stylecolor=&hide_artwork=&embed_type=widget_standard&embed_uuid=40befef7-ff2d-4d83-8008-342e05a0a0c9&hide_tracklist=&hide_cover=1&autoplay=" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="312" height="135"></embed></object>
+        <?php
+        }
+        ?>
+
     <?php } else { ?>
+      
       <iframe width="100%" height="135" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122421849?&amp;show_comments=false&amp;auto_play=false&amp;show_artwork=true&amp;color=4f2170"></iframe>
       <!--<iframe style="" width="100%" height="135px" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F70191463?&amp;show_comments=false&amp;auto_play=false&amp;show_artwork=true&amp;color=4f2170"></iframe> -->
     <?php } ?>
