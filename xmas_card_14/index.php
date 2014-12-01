@@ -117,7 +117,7 @@ $title = array(
           <div class="span8">
             <h1>Merry Christmas from <br>South Devon College</h1>
             <i class="g-font">Inspiring our community through learning for all</i>
-            <h4>Turn on your sound and click below for our very own Christmas song!</h4>
+            <h4>Visit daily to enjoy a special Advent treat!</h4>
           </div>
           <div class="span2 hidden-phone" id="ofsted">
             <a class="ofsted-logo" href="http://southdevon.ac.uk/about-us/awards-and-successes" target="_blank">
@@ -130,7 +130,7 @@ $title = array(
 
 <?php 
   $d=date("M");  
-  if ($d=="Nov") {
+  if ($d=="Dec") {
 
     echo '<div class="row-fluid container ferret">';
     for ($j=1; $j<=19; $j++) {    
