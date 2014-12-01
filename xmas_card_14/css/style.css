@@ -115,10 +115,10 @@ p {
 }
 
 .box p {
-  font-size: 1.3em;
+  font-size: 15px;
   color: #f6f6f6;
   margin: 21px;
-  text-shadow: 2px 2px 2px #000;  
+  text-shadow: 2px 2px 2px #2C2C2C;
 }
 
 .box img {
@@ -131,7 +131,7 @@ p {
 }
 
 .box.notyet p {
-  margin: 58px 0;
+  margin: 38px 15px;
 }
 
 .social {
@@ -263,17 +263,50 @@ p {
 /*-----------------------------------------------------
 -------------        MEDIA QUERIES         ------------
 -----------------------------------------------------*/
+@media (min-width: 1200px) { 
+  .box.notyet p {
+    margin: 38px 15px;
+    /* Safari */
+    -webkit-transform: rotate(-30deg);
 
+    /* Firefox */
+    -moz-transform: rotate(-30deg);
+
+    /* IE */
+    -ms-transform: rotate(-30deg);
+
+    /* Opera */
+    -o-transform: rotate(-30deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}
+
+@media (min-width: 979px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 767px) and (max-width: 978px) {
+  .box.notyet p {
+      margin: 39px 6px;
+      font-size: 13px;
+  }   
+}
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 979px) {
   #ofsted.span2 img {
     width: 100%;
   }
+  
+
 }
 
 /* Phone */
 @media (max-width: 767px) { 
+
+
   .box {
     margin-bottom: 10px;
   }

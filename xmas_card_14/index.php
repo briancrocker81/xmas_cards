@@ -154,7 +154,7 @@ $title = array(
               '."\n";
       } else {
         echo '<div id="dec'.$j.'" class="span2 box notyet">
-                <p class="donkey">'. addOrdinalNumberSuffix($j) .'</p>
+                <p class="donkey">Come back on the '. addOrdinalNumberSuffix($j) .' to open this picture</p>
               </div>
               '."\n";
       }
